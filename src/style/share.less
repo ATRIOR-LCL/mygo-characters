@@ -1,0 +1,59 @@
+.share {
+    position: fixed;
+    width: 2rem;
+    aspect-ratio: 6/1;
+    z-index: 10;
+    right: .1rem;
+    top: .1rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    // background-color: red;
+
+    & div {
+        height: 70%;
+        display: flex;
+        justify-content: center;
+        gap: .1rem;
+        align-items: center;
+        position: relative;
+
+        & img {
+            display: block;
+            width: 20%;
+        }
+
+        & a {
+            appearance: none;
+            font-family: 'Blod';
+            font-size: .08rem;
+            color: #000;
+            white-space: nowrap;
+            text-decoration: none;
+        }
+
+        &:hover span {
+            transform-origin: left;
+            transform: scaleX(1);
+        }
+
+        & span {
+            position: absolute;
+            width: 100%;
+            height: .01rem;
+            background-color: #000;
+            bottom: 0;
+            transition: transform .5s ease;
+            transform-origin: right;
+            transform: scaleX(0);
+        }
+    }
+
+    & .x {
+        flex-basis: 32%;
+    }
+
+    & .youtube {
+        flex-basis: 50%;
+    }
+}

@@ -1,0 +1,38 @@
+.detail {
+    width: 2.5rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    gap: .1rem;
+    & section {
+        width: 100%;
+        height: 40%;
+        // background-color: red;
+        font-family: 'Thin';
+        position: relative;
+        padding-right: .4rem;
+        z-index: 10;
+        transition: transform .5s ease, opacity .1s ease;
+        transform: translateX(0);
+        opacity: 1;
+        & h3 {
+            position: absolute;
+            top: 0;
+            font-size: .2rem;
+            color: #000;
+            font-family: 'Blod';
+            transform: translateY(-100%);
+        }
+
+        & p {
+            font-family: 'Thin';
+            font-size: .12rem;
+        }
+    }
+}
+
+.detail-fade-in {
+    transform: translateX(100%) !important;
+    opacity: 0 !important;
+}

@@ -1,0 +1,19 @@
+.rotate {
+    height: 60%;
+    aspect-ratio: 1;
+    // background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    transform-origin: center center;
+    transition: transform .5s ease, opacity .1s ease;
+    transform: translateY(200%) rotate(0deg);
+    opacity: 1;
+    z-index: 4;
+    &-image {
+        position: absolute;
+        transform-origin: center center;
+        width: 120%;
+    }
+}
