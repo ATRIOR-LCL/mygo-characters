@@ -2,14 +2,6 @@ import React from "react";
 import "../style/aside.less";
 import { Character } from "../configs/characters";
 
-// import anon from "../assets/characters/ano/img_chara_anon_02.webp";
-// import rana from "../assets/characters/rana/img_chara_rana_02.webp";
-// import taki from "../assets/characters/taki/img_chara_taki_02.webp";
-// import soyo from "../assets/characters/soyo/img_chara_soyo_02.webp";
-// import tomori from "../assets/characters/tomori/img_chara_tomori_02.webp";
-
-
-
 interface ContentProps {
   bg:string;
   sign:string;

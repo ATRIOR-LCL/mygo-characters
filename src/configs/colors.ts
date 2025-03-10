@@ -1,3 +1,4 @@
+// 角色主题色
 const colors:string[] = [
     '#FF8899',
     '#77BBDD',

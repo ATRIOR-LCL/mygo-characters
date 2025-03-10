@@ -2,6 +2,7 @@ export type Character = {
     name: string,
     doing: string,
 }
+// 角色名称，职业
 const characters:Character[] = [
     {
         name:'Chihaya Anon',
