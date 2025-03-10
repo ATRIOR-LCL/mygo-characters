@@ -4,5 +4,5 @@ const useRem = ()=> {
     document.documentElement.style.fontSize = size;
 }
 
-window.addEventListener('DOMContentLoaded', useRem);
+document.addEventListener('DOMContentLoaded', useRem);
 window.addEventListener('resize', useRem);
